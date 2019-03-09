@@ -1,0 +1,60 @@
+{
+    "_default": {
+        "7": {
+            "pain": "i am sad",
+            "age": "78",
+            "kategori": [
+                "shopping",
+                "travel"
+            ]
+        },
+        "8": {
+            "pain": "no bus",
+            "age": "45",
+            "kategori": [
+                "kindergarden",
+                "shopping"
+            ]
+        },
+        "9": {
+            "pain": "no bus",
+            "age": "45",
+            "kategori": [
+                "travel",
+                "school"
+            ]
+        },
+        "10": {
+            "pain": "TOm for penger",
+            "age": "17",
+            "kategori": [
+                "travel",
+                "travel"
+            ]
+        },
+        "11": {
+            "pain": "TOm for penger",
+            "age": "17",
+            "kategori": [
+                "kindergarden",
+                "shopping"
+            ]
+        },
+        "12": {
+            "pain": "TOm for penger",
+            "age": "17",
+            "kategori": [
+                "school",
+                "kindergarden"
+            ]
+        },
+        "13": {
+            "pain": "ingen katt",
+            "age": "1",
+            "kategori": [
+                "shopping",
+                "school"
+            ]
+        }
+    }
+}
