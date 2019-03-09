@@ -8,15 +8,7 @@ app = Flask(__name__)
 
 db = TinyDB('db/db.json')
 
-@app.route("/test")
-def home():
-    return "Hello, World!!!!"
-
-@app.route("/salvador")
-def salvador():
-    return "Hello, Salvador"
-
-@app.route("/index")
+@app.route("/")
 def test2():
     return render_template("index.html")
 
@@ -30,11 +22,6 @@ def result():
         return render_template("result.html",result = result)
     else:
         print("funka ikke")
-
-
-@app.route("/test3")
-def test3():
-    return "test3"
 
 if __name__ == "__main__":
     app.run(debug=True)
