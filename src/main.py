@@ -17,8 +17,11 @@ def test2():
 def result():
     if request.method == 'POST':
         result = request.form.to_dict()
+        result["city"] = get_location()
+        result["kategori"] = get_categories(result["Pain"])
         print(result["Pain"], result["Age"])
-        db.insert({'pain': result["Pain"], 'age': result["Age"], 'city': get_location() , 'kategori': get_categories()})
+        #db.insert({'pain': result["Pain"], 'age': result["Age"], 'city': get_location() , 'kategori': get_categories()})
+        db.insert(result)
 
         return render_template("result.html",result = result)
     else:
