@@ -9,7 +9,7 @@ kategori3 = "school"
 Pain = Query()
 
 
-def similar_categories(kat1, kat2, kat3):
+def similar_categories(kategorier):
     """
     The worst function ever written.
     """
@@ -21,13 +21,23 @@ def similar_categories(kat1, kat2, kat3):
     for i in range(len(db.all())):
         for kat in db.all()[i]["kategori"]:
             print(kat)
-            if kat1 in kat:
+            if len(kategorier) == 0:
+                kategorier.append("")
+                kategorier.append("")
+                kategorier.append("")
+            if len(kategorier) == 1:
+                kategorier.append("")
+                kategorier.append("")
+            if len(kategorier) == 2:
+                kategorier.append("")
+
+            if kategorier[0] in kat:
                 antall1 += 1
-            if kat2 in kat:
+            if kategorier[1] in kat:
                 antall2 += 1
-            if kat3 in kat:
+            if kategorier[2] in kat:
                 antall3 += 1
-            if kat1 in kat and kat2 in kat and kat3 in kat:
+            if kategorier[0] in kat and kategorier[1] in kat and kategorier[2] in kat:
                 samme +=1
     return [antall1, antall2, antall3, samme]
 
