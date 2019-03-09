@@ -11,7 +11,7 @@ token = os.getenv("TOKEN")
 
 print(token)
 
-def get_info():
+def get_location():
 
     ip = get('https://api.ipify.org').text
     api = 'http://api.ipstack.com/' + ip + '?access_key=' + token
@@ -21,7 +21,9 @@ def get_info():
     result = result.decode()
     result = json.loads(result)
 
-    return result #return dict
+    city = result["region_name"]
+    #return result #return dict
+    return city
 
 if __name__ == "__main__":
-    print(get_info())
+    print(get_location())

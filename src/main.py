@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 from tinydb import TinyDB, Query
 from categories import get_categories
+from location import get_location
 
 app = Flask(__name__)
 
@@ -17,7 +18,7 @@ def result():
     if request.method == 'POST':
         result = request.form.to_dict()
         print(result["Pain"], result["Age"])
-        db.insert({'pain': result["Pain"], 'age': result["Age"], 'kategori': get_categories()})
+        db.insert({'pain': result["Pain"], 'age': result["Age"], 'city': get_location() , 'kategori': get_categories()})
 
         return render_template("result.html",result = result)
     else:
