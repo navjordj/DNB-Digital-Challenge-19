@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_2.css') }}">
+    <title>Having a bad day?!</title>
+</head>
+    <div class="header">
+    <header><h1>HAVING A BAD DAY? </h1></header>
+    </div>
+ <section class id="Disen">>
+                  <body>
+                   
+                          <style>
+                body {
+                 background: url(static/img/ny.jpeg) ;
+                        background-size: 100%;
+                         background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+                        -moz-background-size: 1000px;
+                        -o-background-size: auto;
+                        background-size: 100%;
+                     opacity: 0.9;
+                 
+                  
+                </style>
+
+            
+                    <div class="row">
+                        <form action="http://localhost:5000/result" method="POST">
+
+                 <div class="Pain">
+                     <input type="text" id="name" name="Pain" placeholder="Describe your pain in 25 Words max...." maxlength="350">
+                 </div>
+
+                 <div class="Age">
+                     <label for="Age"></label>
+                     <input type="Age" id="Age" name="Age" placeholder="Age.." size="10" maxlength="3" font-colour:black>   
+
+                     <select  type="Gender" id="Gender" name="Gender" placeholder="Gender..">>
+                     <option >Gender</option>
+                     <option >Male</option>
+                     <option >Female</option>
+                     <option >Transgender</option>
+                     </select>
+
+                     <label for="Location" ></label>
+                     <select type="Location" id="Location" name="Location" placeholder="Location..">
+                     <option>Location</option>
+                     <option value="Oslo">Oslo</option>
+                    <option value="Bergen">Bergen</option>
+                    <option value="Trondheim">Trondheim</option>
+                    <option value="Tromsø">Tromso</option>
+                     </select>
+                </div>
+
+                                                                       
+       <br> 
+                 <div class="Send">
+
+                 <input type="submit" value="Send">
+                 </div>
+                <style>
+                ::placeholder {
+                  color: Black;
+                  opacity: 5; /* Firefox */
+                }
+
+
+                </style>
+                  </form>
+               </div> 
+</div>
+ </section>
+</html>

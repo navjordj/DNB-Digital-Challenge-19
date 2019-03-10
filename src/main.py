@@ -28,7 +28,7 @@ def result():
 
 @app.route('/', methods = ['POST', 'GET'])
 def dnb():
-    return render_template("DNB.html")
+    return render_template("DNB_2.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

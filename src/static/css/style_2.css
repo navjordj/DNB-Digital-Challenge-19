@@ -1,0 +1,159 @@
+
+
+#Disen{
+
+margin-right: 25%;
+margin-left: 25%;
+margin-top: 9%;
+margin-bottom: auto;
+  padding: auto;
+}
+
+
+.row{
+     font-family: "Roboto";
+    margin: 0;
+    font-size: 20px;
+    color: black;
+   
+      }
+.row   input[text=Age], textarea{
+          width:100px;   
+
+  box-sizing: content-box;
+   border: 4px solid white;
+  border-radius: 50%;
+  background-color: #CF634C;
+  resize: horizontal;
+}
+.row    select[type=Gender], select{
+
+   width:100px;   
+
+  box-sizing: border-box;
+   border: 4px solid white;
+  border-radius: 20px;
+  background-color: #CF634C;
+  resize: horizontal;
+  margin-left: 29%;
+
+}
+.row    select[type=Location], select{
+
+   width:100px;   
+
+  box-sizing: border-box;
+   border: 4px solid white;
+  border-radius: 20px;
+  background-color: #CF634C;
+  resize: horizontal;
+
+
+}
+
+.row   input[type=text], textarea  {
+             width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+   border: 4px solid white;
+  border-radius: 8px;
+  background-color: #CF634C;
+  font-size: 16px;
+  font-color:black;
+  resize: horizontal;
+
+        }
+        .row   input[type=age], textarea {
+            width: 10%;
+            padding: 1%;
+            border: 4px solid #FFF;
+            border-radius: 20%;
+            box-sizing:all;
+            margin-top: 6px;
+            margin-bottom: 16px;
+              background-color: #CF634C;
+
+
+        }
+      
+.row  input[type=submit] {
+            background:#FF9B19;
+            padding:12px 30px;
+            font-weight:600;
+            color:#FFF;
+            border-radius: 20%;
+            text-decoration:none;
+ border: 4px solid white;
+         margin-top: 10%;
+            margin-left: 42%;
+        }
+.row .Gender{
+  width: 50%;
+            padding: 1%;
+           
+margin-left: 30%;
+
+}
+  
+.header h1{
+            color:brown;
+margin-top: 4%;
+margin-left: 28%;
+font-style: inherit;
+  font-size: 400%;
+}
+
+.col-inner .button{
+
+ width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+   border: 4px solid white;
+  border-radius: 8px;
+  background-color: #CF634C;
+  font-size: 16px;
+  resize: none;
+
+}
+
+
+.container .input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.container .input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+.Gender{
+
+  background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+ 
