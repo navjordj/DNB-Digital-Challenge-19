@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-from flask_sqlalchemy import SQLAlchemy
 
 from tinydb import TinyDB, Query
 from categories import get_categories
@@ -9,26 +8,23 @@ from others import similar_categories
 app = Flask(__name__)
 
 db = TinyDB('db/db.json')
-
+"""
 @app.route("/")
 def test2():
     return render_template("index.html")
+"""
 
 @app.route('/result',methods = ['POST', 'GET'])
 def result():
     if request.method == 'POST':
         result = request.form.to_dict()
         result["city"] = get_location()
-        result["kategori"] = get_categories(result["Pain"])
-        print(result["Pain"], result["Age"])
-        #db.insert({'pain': result["Pain"], 'age': result["Age"], 'city': get_location() , 'kategori': get_categories()})
+        result["category"] = get_categories(result["Pain"])
         db.insert(result)
-        similar = similar_categories(result["kategori"])
+        similar = similar_categories(result["category"])
         return render_template("result.html",result = result, similar = similar)
-    else:
-        print("funka ikke")
 
-@app.route('/dnb', methods = ['POST', 'GET'])
+@app.route('/', methods = ['POST', 'GET'])
 def dnb():
     return render_template("DNB.html")
 

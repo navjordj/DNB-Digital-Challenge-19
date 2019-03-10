@@ -19,7 +19,7 @@ def similar_categories(kategorier):
     samme = 0
 
     for i in range(len(db.all())):
-        for kat in db.all()[i]["kategori"]:
+        for kat in db.all()[i]["category"]:
             print(kat)
             if len(kategorier) == 0:
                 kategorier.append("")
@@ -42,4 +42,4 @@ def similar_categories(kategorier):
     return [antall1, antall2, antall3, samme]
 
 if __name__ == "__main__":
-    print(similar_categories("travel", "kindergarden", "school"))
+    print(similar_categories(["travel", "kindergarden", "school"]))
