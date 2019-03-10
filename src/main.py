@@ -20,6 +20,8 @@ def result():
         result = request.form.to_dict()
         result["city"] = get_location()
         result["category"] = get_categories(result["Pain"])
+        result["Location"] = request.form.get("Location")
+        print(str(request.form.get("Location")))
         db.insert(result)
         similar = similar_categories(result["category"])
         return render_template("result.html",result = result, similar = similar)

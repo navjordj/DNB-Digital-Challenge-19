@@ -20,7 +20,6 @@ def similar_categories(kategorier):
 
     for i in range(len(db.all())):
         for kat in db.all()[i]["category"]:
-            print(kat)
             if len(kategorier) == 0:
                 kategorier.append("")
                 kategorier.append("")

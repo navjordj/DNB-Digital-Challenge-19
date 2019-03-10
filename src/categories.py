@@ -8,7 +8,6 @@ def get_categories(s):
         #print(a)
         if a in stop_words:
             s = s.replace(a, '')
-            print(s)
 
     categories = ['sports', 'entertainment', 'culture', 'hospital', 
               'rights', 'transport', 'food', 'kindergarden']
