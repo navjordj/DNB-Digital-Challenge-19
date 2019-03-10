@@ -28,9 +28,9 @@ def result():
     else:
         print("funka ikke")
 
-#@app.route('/business', ['POST', 'GET'])
-#def business():
-#    return render_template("business.html")
+@app.route('/dnb', methods = ['POST', 'GET'])
+def dnb():
+    return render_template("DNB.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

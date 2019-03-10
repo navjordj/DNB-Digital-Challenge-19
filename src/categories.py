@@ -18,7 +18,7 @@ def get_categories(s):
             print(s)
 
     categories = ['sports', 'entertainment', 'culture', 'hospital', 
-              'rights', 'transport', 'food']
+              'rights', 'transport', 'food', 'kindergarden']
     # getting word from sentence that is in our category
     cat = []
     for i in s.split():
